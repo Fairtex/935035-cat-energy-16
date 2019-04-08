@@ -1,10 +1,10 @@
-.page-header{
-  background-color:#ffffff;
+.page-header {
+  background-color: #ffffff;
   margin-bottom: 22px;
 }
 
 .page-header__top-box {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 
@@ -14,14 +14,15 @@
 }
 
 .page-header__toggle {
-  background-color:#222222;
+  background-color: #222222;
   outline: none;
   border: none;
 
-  width:25px;
+  width: 25px;
   height: 2px;
 
   cursor: pointer;
+
   &::before,
   &::after {
     display: block;
@@ -31,9 +32,11 @@
     content: "";
     background-color: #222222;
   }
+
   &::before {
     transform: translate(-6px, -10px);
   }
+
   &::after {
     transform: translate(-6px, 6px);
   }
