@@ -41,3 +41,25 @@
     transform: translate(-6px, 6px);
   }
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    padding-top: 24px;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .page-header__top-box {
+    display: block;
+    padding: 0;
+    border: none;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}

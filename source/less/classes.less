@@ -1,3 +1,7 @@
+@tablet-width: 768px;
+
+@desktop-width: 1300px;
+
 .wrapper {
   width: 100%;
   max-width: 280px;
@@ -7,4 +11,10 @@
 .type-link {
   text-decoration: none;
   color: inherit;
+}
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    max-width: 708px;
+  }
 }
