@@ -108,3 +108,64 @@
     background: url("../img/icon-right-arrow-long.svg") no-repeat top center;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .programms__block {
+    padding-left: 53px;
+    padding-top: 80px;
+    padding-bottom: 63px;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .programms__title {
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .programms__text {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programms__block--slim > .programms__text {
+    padding-right: 285px;
+  }
+
+  .programms__block--pro > .programms__text {
+    padding-right: 310px;
+  }
+
+  .programms__link {
+    font-size: 20px;
+    line-height: 20px;
+
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programms__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programms__block {
+    box-sizing: border-box;
+    flex-basis: 570px;
+    padding-right: 0;
+    margin-bottom: 80px;
+  }
+
+  .programms__block--slim > .programms__text {
+    padding-right: 0;
+  }
+
+  .programms__block--pro > .programms__text {
+    padding-right: 0;
+  }
+}

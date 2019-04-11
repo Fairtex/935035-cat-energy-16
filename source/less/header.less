@@ -41,3 +41,46 @@
     transform: translate(-6px, 6px);
   }
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    padding-top: 24px;
+    margin-bottom: 80px;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .page-header__top-box {
+    display: block;
+    padding: 0;
+    border: none;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    padding-top: 54px;
+    position: relative;
+  }
+
+  .index .page-header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+    background-color: #63a73a;
+  }
+}
