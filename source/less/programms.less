@@ -147,3 +147,25 @@
     padding-bottom: 0;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .programms__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programms__block {
+    box-sizing: border-box;
+    flex-basis: 570px;
+    padding-right: 0;
+    margin-bottom: 80px;
+  }
+
+  .programms__block--slim > .programms__text {
+    padding-right: 0;
+  }
+
+  .programms__block--pro > .programms__text {
+    padding-right: 0;
+  }
+}

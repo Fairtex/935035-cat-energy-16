@@ -105,3 +105,28 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .benefits__wrapper {
+    border: none;
+  }
+
+  .benefits__list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .benefits__item {
+    flex-basis: 245px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .benefits__item:nth-of-type(odd) {
+    margin-right: 0;
+  }
+
+  .benefits__item:first-of-type {
+    margin-right: 0;
+  }
+}
