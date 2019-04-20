@@ -25,6 +25,10 @@
   text-align: center;
 }
 
+.main-nav--closed {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
     font-family: "Oswald Regular", "Arial", "Helvetica", sans-serif;
@@ -76,6 +80,14 @@
     z-index: 1;
 
     color: #ffffff;
+  }
+
+  a.main-nav__link:hover {
+    opacity: 0.6;
+  }
+
+  a.main-nav__link:active {
+    opacity: 0.3;
   }
 
   .index .main-nav__link--active {

@@ -107,6 +107,19 @@
 
     background: url("../img/icon-right-arrow-long.svg") no-repeat top center;
   }
+
+  &:hover {
+    &::before {
+      width: 33px;
+      right: -9px;
+
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -194,6 +207,10 @@
     line-height: 20px;
 
     padding-bottom: 0;
+
+    &::before {
+      top: 4px;
+    }
   }
 }
 

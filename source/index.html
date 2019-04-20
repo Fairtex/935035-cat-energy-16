@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="index">
-    <header class="page-header">
+    <header class="page-header page-header--nojs">
       <div class="page-header__wrapper wrapper">
         <div class="page-header__top-box">
-          <a href="index.html" class="page-header__logo-link ">
+          <a href="index.html" class="page-header__logo-link">
             <img src="img/logo-mobile.svg" alt="Cat energy логотип" width="191" height="38" class="page-header__logo">
           </a>
-          <button type="button" class="page-header__toggle"></button>
+          <button type="button" class="page-header__toggle page-header__toggle--closed"></button>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html" class="main-nav__link main-nav__link--active type-link">
+              <span class="main-nav__link main-nav__link--active type-link">
                 Главная
-              </a>
+              </span>
             </li>
             <li class="main-nav__item">
               <a href="catalog.html" class="main-nav__link type-link">
@@ -44,7 +44,7 @@
             <div class="preview__picture-block">
               <img src="img/index-can-mobile@1x.png" alt="Спортивное питание Cat energy" width="280" height="271" class="preview__picture">
             </div>
-            <a href="form.html" class="preview__link type-link">
+            <a href="form.html" class="preview__link type-link btn--green">
               Подобрать программу
             </a>
           </div>
@@ -158,5 +158,6 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
