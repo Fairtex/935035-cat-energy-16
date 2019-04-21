@@ -99,13 +99,26 @@
 
   &::before {
     content: "";
-
     width: 24px;
     height: 11px;
     position: absolute;
     right: 0;
     top: 2px;
+
     background: url("../img/icon-right-arrow-long.svg") no-repeat top center;
+  }
+
+  &:hover {
+    &::before {
+      width: 33px;
+      right: -9px;
+
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -123,6 +136,53 @@
     line-height: 37px;
   }
 
+  .programms__logo--slim {
+    position: absolute;
+    right: 90px;
+    top: 0;
+    width: 140px;
+    height: 195px;
+  }
+
+  .programms__title-block--slim {
+    padding-left: 0;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 15px;
+      left: 375px;
+
+      background: url("../img/Ellipse-tablet.png") no-repeat top center;
+    }
+  }
+
+  .programms__logo--pro {
+    position: absolute;
+    right: 27px;
+    top: 54px;
+    width: 274px;
+    height: 114px;
+  }
+
+  .programms__title-block--pro {
+    &::before {
+      content: "";
+
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 13px;
+      left: 383px;
+
+      background: url("../img/Ellipse-tablet.png") no-repeat top center;
+    }
+  }
+
+
   .programms__text {
     border: none;
     padding-bottom: 0;
@@ -133,11 +193,13 @@
   }
 
   .programms__block--slim > .programms__text {
-    padding-right: 285px;
+    padding-right: 0;
+    width: 372px;
   }
 
   .programms__block--pro > .programms__text {
-    padding-right: 310px;
+    padding-right: 0;
+    width: 344px;
   }
 
   .programms__link {
@@ -145,6 +207,10 @@
     line-height: 20px;
 
     padding-bottom: 0;
+
+    &::before {
+      top: 4px;
+    }
   }
 }
 
@@ -158,14 +224,69 @@
     box-sizing: border-box;
     flex-basis: 570px;
     padding-right: 0;
+    padding-top: 41px;
     margin-bottom: 80px;
+  }
+
+  .programms__title-block {
+    margin-bottom: 54px;
+  }
+
+  .programms__title-block--slim {
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 9px;
+      left: -2px;
+
+      background: url("../img/Ellipse-desktop.png") no-repeat top center;
+    }
+  }
+
+  .programms__title-block--pro {
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 3px;
+      left: -3px;
+
+      background: url("../img/Ellipse-desktop.png") no-repeat top center;
+    }
+  }
+
+  .programms__logo {
+    position: static;
+  }
+
+  .programms__logo--slim {
+    width: 70px;
+    height: 97px;
+    margin-left: 13px;
+    margin-right: 80px;
+  }
+
+  .programms__logo--pro {
+    width: 134px;
+    height: 56px;
+    margin-left: -22px;
+    margin-right: 48px;
+  }
+
+  .programms__title {
+    padding: 30px 0 34px;
+  }
+
+  .programms__text {
+    margin-bottom: 36px;
   }
 
   .programms__block--slim > .programms__text {
     padding-right: 0;
+    width: 465px;
   }
 
   .programms__block--pro > .programms__text {
     padding-right: 0;
+    width: 446px;
   }
 }

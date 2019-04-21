@@ -2,10 +2,13 @@
 
 @desktop-width: 1300px;
 
+@mobile-width-only: 767px;
+
 .wrapper {
   width: 100%;
-  max-width: 280px;
+  max-width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .type-link {
@@ -13,14 +16,27 @@
   color: inherit;
 }
 
+.btn--green {
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 @media (min-width: @tablet-width) {
   .wrapper {
-    max-width: 708px;
+    max-width: 768px;
+    padding: 0 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .wrapper {
-    max-width: 1220px;
+    max-width: 1300px;
+    padding: 0 40px;
   }
 }

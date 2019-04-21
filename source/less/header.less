@@ -1,5 +1,4 @@
 .page-header {
-  background-color: #ffffff;
   margin-bottom: 22px;
 }
 
@@ -14,38 +13,73 @@
 }
 
 .page-header__toggle {
-  background-color: #222222;
   outline: none;
   border: none;
 
   width: 25px;
-  height: 2px;
+  height: 22px;
+  position: relative;
 
   cursor: pointer;
 
-  &::before,
-  &::after {
-    display: block;
+  background-color: #ffffff;
+}
+
+.page-header__toggle--closed {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 1px;
+    left: 0;
+
     width: 25px;
     height: 2px;
 
+    background-color: #000000;
+
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
+}
+
+.page-header__toggle--opened {
+  &::before,
+  &::after {
     content: "";
-    background-color: #222222;
+
+    position: absolute;
+    top: 9px;
+    left: 4px;
+
+    width: 22px;
+    height: 2px;
+
+    background-color: #000000;
   }
 
   &::before {
-    transform: translate(-6px, -10px);
+    transform: rotate(45deg);
   }
 
   &::after {
-    transform: translate(-6px, 6px);
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .page-header--nojs .page-header__top-box {
+    display: block;
+    text-align: center;
+  }
+
+  .page-header--nojs .page-header__toggle {
+    display: none;
   }
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
     padding-top: 24px;
-    margin-bottom: 80px;
   }
 
   .page-header__wrapper {
@@ -60,6 +94,11 @@
     border: none;
   }
 
+  .page-header__logo {
+    width: 173px;
+    height: 58px;
+  }
+
   .page-header__toggle {
     display: none;
   }
@@ -69,6 +108,12 @@
   .page-header {
     padding-top: 54px;
     position: relative;
+    margin-bottom: 80px;
+  }
+
+  .page-header__logo {
+    width: 202px;
+    height: 59px;
   }
 
   .index .page-header::before {
@@ -80,7 +125,7 @@
     bottom: 0;
     width: 50%;
 
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat;
     background-color: #63a73a;
   }
 }

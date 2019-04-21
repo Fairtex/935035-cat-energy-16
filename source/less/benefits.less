@@ -77,6 +77,8 @@
     min-height: 230px;
     flex-basis: 245px;
     margin-bottom: 85px;
+
+    position: relative;
   }
 
   .benefits__item:nth-of-type(odd) {
@@ -86,14 +88,68 @@
   .benefits__item:first-of-type {
     flex-basis: 205px;
     margin-right: 180px;
+
+    &::before {
+      content: "1";
+      font-family: "Oswald Regular", "Arial", "Helvetica", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+
+      position: absolute;
+      top: -40px;
+      right: -25px;
+      z-index: -1;
+    }
+  }
+
+  .benefits__item:nth-of-type(2) {
+    &::before {
+      content: "2";
+      font-family: "Oswald Regular", "Arial", "Helvetica", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+
+      position: absolute;
+      top: -39px;
+      right: 0;
+      z-index: -1;
+    }
   }
 
   .benefits__item:nth-last-of-type(1) {
     margin-bottom: 0;
+
+    &::before {
+      content: "4";
+      font-family: "Oswald Regular", "Arial", "Helvetica", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+
+      position: absolute;
+      top: -43px;
+      right: -10px;
+      z-index: -1;
+    }
   }
 
   .benefits__item:nth-last-of-type(2) {
     margin-bottom: 0;
+
+    &::before {
+      content: "3";
+      font-family: "Oswald Regular", "Arial", "Helvetica", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+
+      position: absolute;
+      top: -38px;
+      right: -5px;
+      z-index: -1;
+    }
   }
 
   .benefits__logo-block {
