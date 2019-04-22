@@ -30,8 +30,8 @@
 
 .products__picture-link {
   display: block;
-  width: 140px;
-  height: 144px;
+  width: auto;
+  height: auto;
 }
 
 .products__info-title {
@@ -186,10 +186,12 @@
   }
 
   .products__item:nth-of-type(odd) .products__picture-img {
+    width: 324px;
     height: 174px;
   }
 
   .products__item:nth-of-type(even) .products__picture-img {
+    width: 324px;
     height: 208px;
   }
 
@@ -264,6 +266,16 @@
 
   .btn {
     width: 169px;
+  }
+
+  .products__item:nth-of-type(odd) .products__picture-img {
+    width: 245px;
+    height: 174px;
+  }
+
+  .products__item:nth-of-type(even) .products__picture-img {
+    width: 245px;
+    height: 208px;
   }
 
   .products__item:nth-last-of-type(1) {

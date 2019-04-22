@@ -12,6 +12,13 @@
   padding-bottom: 16px;
 }
 
+.page-header__logo-link {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
 .page-header__toggle {
   outline: none;
   border: none;
@@ -127,5 +134,10 @@
 
     background: url("../img/index-background-desktop@1x.jpg") no-repeat;
     background-color: #63a73a;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
   }
 }
