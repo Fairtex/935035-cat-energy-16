@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="index">
@@ -146,8 +150,8 @@
                 <span class="example__info-mark">снижение веса</span>
               </li>
               <li class="example__info-item">
-                <div class="example__info-value">5кг</div>
-                <span class="example__info-mark">снижение веса</span>
+                <div class="example__info-value">60 дней</div>
+                <span class="example__info-mark">затрачено времени</span>
               </li>
             </ul>
             <div class="example__coast">
@@ -155,8 +159,8 @@
             </div>
           </div>
           <div class="example__slider">
-            <input type="radio" id="slider-input-before" class="example__input" name="slider-input">
-            <input type="radio" id="slider-input-after" class="example__input" name="slider-input">
+            <input type="radio" id="slider-input-before" class="example__input visually-hidden" name="slider-input">
+            <input type="radio" id="slider-input-after" class="example__input visually-hidden" name="slider-input">
             <div class="slider__slides-block">
               <div class="slider__slide">
                 <picture>
@@ -165,7 +169,7 @@
                     <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Было" width="320" height="240" class="slider__picture">
                 </picture>
               </div>
-              <div class="slider__slide slider__slide-hidden">
+              <div class="slider__slide slider__slide--hidden">
                 <picture>
                     <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
