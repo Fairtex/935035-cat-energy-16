@@ -3,6 +3,11 @@
   color: #ffffff;
 
   background: url("../img/index-background-mobile@1x.jpg") no-repeat top center;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .preview__wrapper {
@@ -21,8 +26,9 @@
   line-height: 36px;
   font-weight: normal;
 
-  margin: 0;
+  margin: 0 auto;
   padding-bottom: 10px;
+  width: 280px;
 }
 
 .preview__text {
@@ -72,8 +78,10 @@
     font-size: 60px;
     line-height: 60px;
 
+    margin: 0;
     margin-bottom: 45px;
     padding-bottom: 0;
+    width: auto;
   }
 
   .preview__text {
@@ -85,15 +93,15 @@
 
   .preview__picture-block {
     position: absolute;
-    bottom: 0;
+    bottom: -25px;
     left: 50%;
-    margin-left: -280px;
+    margin-left: -343px;
     z-index: -1;
   }
 
   .preview__picture {
-    width: 630px;
-    height: 585px;
+    width: 709px;
+    height: 609px;
   }
 
   .preview__link {
@@ -123,7 +131,7 @@
   .preview__picture-block {
     top: 30px;
     bottom: auto;
-    margin-left: -135px;
+    margin-left: -160px;
     z-index: 1;
   }
 
