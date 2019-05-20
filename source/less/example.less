@@ -96,6 +96,7 @@
 .example__slider {
   position: relative;
   padding-bottom: 38px;
+  margin: 0 -20px;
 }
 
 .slider__slides-block {
@@ -152,6 +153,8 @@
   width: 35px;
   height: 6px;
   margin-top: -3px;
+  border: none;
+  outline: none;
   border-radius: 3px;
 
   background-color: #68b738;
@@ -225,6 +228,7 @@
 
   .example__slider {
     padding-bottom: 67px;
+    margin: 0 -30px;
 
     background-image: linear-gradient(to right, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) 50%, rgba(234, 234, 234, 1) 50%, rgba(234, 234, 234, 1) 100%);
   }
@@ -312,22 +316,48 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    display: flex;
+    position: relative;
+    padding-top: 190px;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: linear-gradient(to bottom, #ffffff, #ffffff 190px, transparent 190px, transparent);
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 73%, #eaeaea 73%, #eaeaea);
+      z-index: -2;
+    }
   }
 
-  .example__wrapper {
-    width: 50%;
-    flex-grow: 1;
-    padding: 50px 40px 75px;
-
-    background-image: linear-gradient(to bottom, #ffffff, #ffffff 170px, #f2f2f2 170px, #f2f2f2 100%);
+  .example__layout {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .example__title-block {
-    margin-bottom: 59px;
+    width: 100%;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    margin-top: -170px;
+    margin-bottom: 0;
   }
 
   .example__info-block {
+    width: 570px;
     padding-top: 72px;
     margin-bottom: 0;
   }
@@ -362,5 +392,30 @@
     display: inline-block;
     vertical-align: top;
     margin-left: 60px;
+  }
+
+  .example__slider {
+    width: 690px;
+    margin-top: -170px;
+  }
+
+  .slider__button {
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active {
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  .slider__range-button {
+    &:hover {
+      border: 1px solid #cfcfcf;
+    }
+
+    &:active {
+      border: 1px solid #68b738;
+    }
   }
 }
