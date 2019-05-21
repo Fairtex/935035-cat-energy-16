@@ -431,7 +431,7 @@
 
   .contacts__tel-icon {
     right: 17px;
-    top: 20px;
+    top: 17px;
   }
 
   .main-form__comment {
@@ -624,5 +624,56 @@
   .submit-block__button-block {
     width: 570px;
     margin-right: 80px;
+  }
+
+  .main-form__text,
+  .main-form__email,
+  .main-form__tel {
+    outline: none;
+
+    &:hover {
+      border: 1px solid #cdcdcd;
+    }
+
+    &:focus {
+      border: 2px solid #444444;
+    }
+  }
+
+  .main-form__textarea {
+    outline: none;
+
+    &:hover {
+      border: 1px solid #cdcdcd;
+    }
+
+    &:focus {
+      border: 2px solid #444444;
+    }
+  }
+
+  .main-form__email:focus + .contacts__email-icon,
+  .main-form__tel:focus + .contacts__tel-icon {
+    fill: #68b738;
+  }
+
+  .main-form__radio:active ~ .programms__label {
+    opacity: 0.3;
+  }
+
+  .programms__label:hover {
+    &::before {
+      border: 1px solid #bfbfbf;
+    }
+  }
+
+  .main-form__checkbox:active ~ .additionally__label {
+    opacity: 0.3;
+  }
+
+  .additionally__label:hover {
+    &::before {
+      border: 1px solid #bababa;
+    }
   }
 }

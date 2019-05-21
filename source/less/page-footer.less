@@ -115,9 +115,21 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-footer {
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo-block,
+  .page-footer__social,
+  .page-footer__developers {
+    padding: 0;
   }
 
   .page-footer__developers-link {
@@ -126,6 +138,7 @@
 
   .page-footer__logo-block {
     border: none;
+    padding-top: 6px;
   }
 
   .page-footer__social {

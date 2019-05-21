@@ -54,6 +54,9 @@
             </div>
             <div class="preview__picture-block">
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp, img/index-can-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
                 <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Спортивное питание Cat energy" width="280" height="271" class="preview__picture">
@@ -138,6 +141,7 @@
       </section>
       <section class="example">
         <div class="example__wrapper wrapper">
+          <div class="example__layout">
           <div class="example__title-block">
             <h2 class="example__title">Живой пример</h2>
           </div>
@@ -163,12 +167,14 @@
               </div>
             </div>
           </div>
-        </div>
           <div class="example__slider">
             <div class="slider__gradient">
             <div class="slider__slides-block">
               <div class="slider__slide slider__slide--before">
                 <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
                     <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
                     <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Было" width="320" height="240" class="slider__picture slider__picture--fat">
@@ -176,6 +182,9 @@
               </div>
               <div class="slider__slide slider__slide--after">
                 <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
                     <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                     <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Стало" width="320" height="240" class="slider__picture slider__picture--slim">
@@ -185,15 +194,18 @@
             <div class="slider__controls">
               <button type="button" class="slider__button">Было</button>
               <div class="slider__range">
-                <span class="slider__range-button"></span>
+                <button class="slider__range-button"></button>
               </div>
               <button type="button" class="slider__button">Стало</button>
             </div>
           </div>
         </div>
+          </div>
+        </div>
       </section>
       <section class="contacts">
-        <div class="contacts__info-block wrapper">
+        <div class="wrapper">
+        <div class="contacts__info-block">
           <div class="contacts__info-layout">
             <div class="contacts__info-title">
               <h2>Приглашаем к сотрудничеству дилеров!</h2>
@@ -204,7 +216,8 @@
             </div>
           </div>
         </div>
-        <div class="contacts__map"></div>
+        </div>
+        <div class="contacts__map" id="map"></div>
       </section>
     </main>
     <footer class="page-footer">
@@ -252,6 +265,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=2b7ca348-64a2-4f1c-9af3-aa871f0ae5d0" type="text/javascript"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
