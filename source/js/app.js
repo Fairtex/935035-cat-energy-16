@@ -21,13 +21,13 @@ var navMain = document.querySelector('.main-nav');
 
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-          center: [59.938631, 30.323055],
+          center: [59.938791, 30.322560],
           zoom: 18
         }, {
           searchControlProvider: 'yandex#search'
         }),
 
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
           hintContent: 'Cat-energy'
         }, {
           iconLayout: 'default#image',
