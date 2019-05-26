@@ -1,5 +1,7 @@
 .additional {
-  margin-top: 32px;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-top: 30px;
   margin-bottom: 35px;
 
   font-family: "Oswald Regular", "Arial", "Helvetica", sans-serif;
@@ -14,7 +16,7 @@
   vertical-align: top;
   width: 250px;
   padding-right: 24px;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   font-size: 24px;
   line-height: 24px;
@@ -40,14 +42,14 @@
 .additional__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   list-style: none;
 }
 
 .additional__item {
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 14px;
+  padding-bottom: 16px;
   border-top: 1px solid #cdcdcd;
 }
 
@@ -62,7 +64,7 @@
 .additional__info > h3 {
   margin: 0;
   padding: 0;
-  margin-bottom: 18px;
+  margin-bottom: 11px;
 
   font-size: 16px;
   line-height: 16px;
@@ -71,7 +73,7 @@
   text-transform: uppercase;
 }
 
-.info__nomination {
+.additional__nomination {
   display: flex;
   justify-content: space-between;
 
@@ -87,7 +89,7 @@
   color: #ffffff;
 }
 
-.additional__stock {
+.stock {
   padding: 65px 58px 44px;
 
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat top center;
@@ -122,7 +124,7 @@
 
 @media (min-width: @tablet-width) {
   .additional {
-    margin-top: 70px;
+    margin-top: 0;
     margin-bottom: 76px;
   }
 
@@ -134,6 +136,7 @@
     padding-left: 38px;
     padding-right: 38px;
     margin-left: -1px;
+    margin-bottom: 80px;
 
     &::before {
       top: 22px;
@@ -157,7 +160,7 @@
   }
 
   .additional__item {
-    padding: 28px 38px;
+    padding: 26px 38px;
     border: 1px solid #e6e6e6;
     border-bottom: none;
 
@@ -166,12 +169,16 @@
     }
   }
 
+  .additional__item:nth-of-type(2) .additional__coast {
+    margin-left: 59px;
+  }
+
   .additional__info {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 
-    margin-bottom: 27px;
+    margin-bottom: 23px;
   }
 
   .additional__info > h3 {
@@ -179,25 +186,27 @@
     line-height: 20px;
 
     margin-bottom: 0;
+    padding-bottom: 3px;
   }
 
-  .info__nomination {
+  .additional__nomination {
     justify-content: flex-end;
+    padding-top: 3px;
 
     font-size: 16px;
     line-height: 20px;
   }
 
-  .nomination__coast {
-    margin-left: 52px;
+  .additional__coast {
+    margin-left: 50px;
   }
 
   .additional__link {
     width: 100%;
   }
 
-  .additional__stock {
-    padding: 65px 124px 65px 91px;
+  .stock {
+    padding: 65px 124px 67px 91px;
 
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat top center;
 
@@ -214,13 +223,17 @@
   }
 
   .stock__info {
-    margin-top: 10px;
+    margin-top: 8px;
+  }
+
+  .stock__info > p {
+    text-align: left;
   }
 }
 
 @media (min-width: @desktop-width) {
   .additional {
-    margin-top: 86px;
+    margin-top: 0;
     margin-bottom: 86px;
   }
 
@@ -246,7 +259,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 13px 0 14px;
+    padding: 17px 0 14px;
     border: none;
     border-top: 1px solid #cdcdcd;
 
@@ -258,14 +271,19 @@
   .additional__info {
     width: 610px;
     margin-bottom: 0;
+    margin-right: 40px;
   }
 
-  .info__nomination {
+  .additional__nomination {
     width: 285px;
     justify-content: space-between;
   }
 
-  .nomination__coast {
+  .additional__item:nth-of-type(2) .additional__coast {
+    margin-right: 5px;
+  }
+
+  .additional__coast {
     margin-left: 0;
   }
 
@@ -273,9 +291,9 @@
     width: 245px;
   }
 
-  .additional__stock {
+  .stock {
     width: 245px;
-    padding: 59px 42px 43px;
+    padding: 65px 42px 39px;
 
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat center;
 
@@ -292,6 +310,10 @@
   }
 
   .stock__info {
-    margin-top: 66px;
+    margin-top: 61px;
+  }
+
+  .stock__info > p {
+    text-align: center;
   }
 }

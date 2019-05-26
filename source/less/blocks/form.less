@@ -4,8 +4,8 @@
 }
 
 .page-main {
-  overflow-x: hidden;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 .page-main__title-block {
@@ -23,7 +23,7 @@
 }
 
 .page-main__text-block {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .page-main__text-block > p {
@@ -37,10 +37,12 @@
 
 .main-form {
   padding-bottom: 31px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-.main-form__cat-block {
-  margin-bottom: 23px;
+.cat-block {
+  margin-bottom: 22px;
 }
 
 .cat-block__item {
@@ -66,10 +68,10 @@
 .main-form__text,
 .main-form__email,
 .main-form__tel {
-  margin-left: 15px;
+  margin-left: 14px;
   width: 100%;
   height: 45px;
-  padding: 15px 15px 12px;
+  padding: 14px 15px 12px;
   border: 1px solid #e7e7e7;
 
   font-family: "Oswald Regular", "Arial", "Helvetica", sans-serif;
@@ -90,12 +92,12 @@
   text-transform: uppercase;
 }
 
-.main-form__programms {
+.cat-programms {
   position: relative;
   border: none;
   margin-left: -20px;
   margin-right: -20px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   margin-top: 0;
   padding: 0 20px;
 
@@ -110,11 +112,11 @@
   }
 }
 
-.programms__layout {
-  padding: 20px 0;
+.cat-programms__layout {
+  padding: 16px 0;
 }
 
-.programms__label {
+.cat-programms__label {
   position: relative;
   display: block;
   padding-top: 12px;
@@ -136,12 +138,12 @@
   }
 }
 
-.main-form__radio:checked ~ .programms__label::before {
+.cat-programms__radio:checked ~ .cat-programms__label::before {
   background-color: #68b738;
   background-clip: content-box;
 }
 
-.main-form__contacts {
+.relations {
   margin-bottom: 27px;
 }
 
@@ -155,7 +157,7 @@
   color: #111111;
 }
 
-.contacts__title {
+.relations__title {
   position: relative;
   display: inline-block;
   width: 201px;
@@ -179,48 +181,48 @@
   }
 }
 
-.contacts__item {
+.relations__item {
   display: flex;
   align-items: center;
 }
 
-.contacts__item:first-of-type {
+.relations__item:first-of-type {
   margin-bottom: 14px;
 }
 
-.contacts__email-block,
-.contacts__tel-block {
-  margin-left: 15px;
+.relations__email-block,
+.relations__tel-block {
+  margin-left: 10px;
   position: relative;
   width: 100%;
 }
 
-.main-form__email,
-.main-form__tel {
+.relations__email,
+.relations__tel {
   padding-right: 45px;
   margin: 0;
 }
 
-.contacts__email-icon {
+.relations__email-icon {
   position: absolute;
   top: 15px;
   right: 15px;
   z-index: 2;
 }
 
-.contacts__tel-icon {
+.relations__tel-icon {
   position: absolute;
   top: 15px;
   right: 12px;
   z-index: 2;
 }
 
-.main-form__comment {
-  margin-bottom: 27px;
+.form-comments {
+  margin-bottom: 23px;
 }
 
-.comment__title,
-.additionally__title {
+.form-comments__title,
+.extra-order__title {
   position: relative;
   display: inline-block;
   padding-right: 24px;
@@ -243,10 +245,14 @@
   }
 }
 
+.form-comments__title {
+  margin-bottom: 36px;
+}
+
 .main-form__textarea {
   width: 100%;
   min-height: 150px;
-  padding: 15px 12px 12px;
+  padding: 13px 13px 12px;
   border: 1px solid #e7e7e7;
 
   font-family: "Oswald Regular", "Arial", "Helvetica", sans-serif;
@@ -256,15 +262,15 @@
   text-transform: uppercase;
 }
 
-.main-form__additionally {
+.extra-order {
   margin-bottom: 28px;
 }
 
-.additionally__title {
+.extra-order__title {
   margin-bottom: 29px;
 }
 
-.additionally__label {
+.extra-order__label {
   position: relative;
   display: block;
   padding-top: 12px;
@@ -284,16 +290,16 @@
   }
 }
 
-.main-form__checkbox:checked ~ .additionally__label::before {
+.extra-order__checkbox:checked ~ .extra-order__label::before {
   background: url("../img/icon-tick.svg") no-repeat center;
   background-size: 21px auto;
 }
 
-.submit-block__button-block {
+.form-submit__button-block {
   margin-bottom: 15px;
 }
 
-.main-form__submit {
+.form-submit__submit {
   border: none;
   outline: none;
 
@@ -312,11 +318,11 @@
   background-color: #68b738;
 }
 
-.submit-block__mark-block {
+.form-submit__mark-block {
   text-align: center;
 }
 
-.main-form__mark {
+.form-submit__mark {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -325,7 +331,7 @@
 
 @media (min-width: @tablet-width) {
   .page-main__title-block {
-    padding-top: 38px;
+    padding-top: 31px;
     margin-bottom: 56px;
   }
 
@@ -344,9 +350,9 @@
     line-height: 30px;
   }
 
-  .main-form__cat-block {
+  .cat-block {
     padding: 0 40px;
-    margin-bottom: 73px;
+    margin-bottom: 72px;
   }
 
   .cat-block__item {
@@ -356,6 +362,10 @@
   .main-form__label {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .main-form__text {
+    margin-left: 20px;
   }
 
   .main-form__text::placeholder,
@@ -370,15 +380,22 @@
   .main-form__email,
   .main-form__tel {
     height: 52px;
+    padding-left: 18px;
   }
 
-  .main-form__programms {
+  .cat-programms {
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 
-  .programms__label {
+  .cat-programms__layout {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  .cat-programms__label {
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 60px;
@@ -390,9 +407,9 @@
     }
   }
 
-  .main-form__contacts {
+  .relations {
     padding: 0 40px;
-    margin-bottom: 70px;
+    margin-bottom: 66px;
   }
 
   .main-form__title {
@@ -404,8 +421,9 @@
     line-height: 36px;
   }
 
-  .contacts__title {
+  .relations__title {
     width: auto;
+    margin-bottom: 75px;
 
     &::before {
       top: 22px;
@@ -424,23 +442,35 @@
     }
   }
 
-  .contacts__email-icon {
+  .relations__item:first-of-type {
+    margin-bottom: 21px;
+  }
+
+  .relations__email-block {
+    margin-left: 21px;
+  }
+
+  .relations__tel-block {
+    margin-left: 14px;
+  }
+
+  .relations__email-icon {
     right: 20px;
     top: 20px;
   }
 
-  .contacts__tel-icon {
+  .relations__tel-icon {
     right: 17px;
     top: 17px;
   }
 
-  .main-form__comment {
+  .form-comments {
     padding: 0 40px;
     margin-bottom: 66px;
   }
 
-  .comment__title {
-    margin-bottom: 70px;
+  .form-comments__title {
+    margin-bottom: 74px;
 
     &::before {
       top: 22px;
@@ -461,18 +491,19 @@
 
   .main-form__textarea {
     min-height: 172px;
+    padding-left: 17px;
 
     font-size: 20px;
     line-height: 30px;
   }
 
-  .main-form__additionally {
+  .extra-order {
     padding: 0 40px;
-    margin-bottom: 37px;
+    margin-bottom: 36px;
   }
 
-  .additionally__title {
-    margin-bottom: 36px;
+  .extra-order__title {
+    margin-bottom: 39px;
 
     &::before {
       top: 22px;
@@ -491,18 +522,18 @@
     }
   }
 
-  .additionally__checkbox-block {
+  .extra-order__checkbox-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  .additionally__item {
+  .extra-order__item {
     width: calc(50% - 30px);
   }
 
-  .additionally__label {
+  .extra-order__label {
     padding-top: 26px;
     padding-bottom: 26px;
     padding-left: 60px;
@@ -514,20 +545,20 @@
     }
   }
 
-  .main-form__submit-block {
+  .form-submit {
     display: flex;
     align-items: center;
     padding: 0 40px;
     margin-bottom: 41px;
   }
 
-  .submit-block__button-block {
+  .form-submit__button-block {
     width: 283px;
     margin-right: 60px;
     margin-bottom: 0;
   }
 
-  .main-form__submit {
+  .form-submit__submit {
     font-size: 20px;
     line-height: 20px;
 
@@ -535,13 +566,21 @@
     padding-bottom: 16px;
   }
 
-  .main-form__mark {
+  .form-submit__mark-block {
+    padding-bottom: 5px;
+  }
+
+  .form-submit__mark {
     font-size: 16px;
     line-height: 16px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .form .page-header {
+    margin-bottom: 66px;
+  }
+
   .page-main__title-block {
     padding-top: 4px;
   }
@@ -550,78 +589,92 @@
     padding-left: 0;
   }
 
+  .main-form {
+    padding-bottom: 41px;
+  }
+
   .main-form__flex-block {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  .main-form__cat-block {
+  .cat-block {
     width: 570px;
     padding: 0;
     margin: 0;
   }
 
-  .main-form__programms {
+  .cat-programms {
     width: 570px;
     padding: 20px 28px;
     margin: 0;
   }
 
-  .programms__layout {
+  .cat-programms__layout {
     padding: 0;
   }
 
-  .main-form__contacts {
+  .relations {
     margin-top: 72px;
     padding: 0;
   }
 
-  .contacts__title {
-    margin-bottom: 70px;
+  .relations__title {
+    margin-bottom: 75px;
   }
 
-  .contacts__flex-block {
+  .relations__flex-block {
     display: flex;
   }
 
-  .contacts__item {
+  .relations__item {
     width: 570px;
   }
 
-  .contacts__item:first-of-type {
+  .relations__item:first-of-type {
     margin-bottom: 0;
     margin-right: 80px;
   }
 
-  .main-form__comment {
+  .form-comments {
     width: 100%;
     padding: 0;
+    margin-bottom: 63px;
   }
 
-  .main-form__additionally {
+  .form-comments__title {
+    margin-bottom: 78px;
+  }
+
+  .extra-order {
     padding: 0;
+    margin-bottom: 44px;
   }
 
-  .additionally__checkbox-block {
+  .extra-order__title {
+    margin-bottom: 42px;
+  }
+
+  .extra-order__checkbox-block {
     justify-content: flex-start;
     flex-wrap: nowrap;
   }
 
-  .additionally__item {
+  .extra-order__item {
     width: 245px;
     margin-right: 80px;
   }
 
-  .additionally__item:last-of-type {
+  .extra-order__item:last-of-type {
     margin-right: 0;
   }
 
-  .main-form__submit-block {
+  .form-submit {
     padding: 0;
   }
 
-  .submit-block__button-block {
+  .form-submit__button-block {
     width: 570px;
     margin-right: 80px;
   }
@@ -652,26 +705,26 @@
     }
   }
 
-  .main-form__email:focus + .contacts__email-icon,
-  .main-form__tel:focus + .contacts__tel-icon {
+  .relations__email:focus + .relations__email-icon,
+  .relations__tel:focus + .relations__tel-icon {
     fill: #68b738;
   }
 
-  .main-form__radio:active ~ .programms__label {
+  .cat-programms__radio:active ~ .cat-programms__label {
     opacity: 0.3;
   }
 
-  .programms__label:hover {
+  .cat-programms__label:hover {
     &::before {
       border: 1px solid #bfbfbf;
     }
   }
 
-  .main-form__checkbox:active ~ .additionally__label {
+  .extra-order__checkbox:active ~ .extra-order__label {
     opacity: 0.3;
   }
 
-  .additionally__label:hover {
+  .extra-order__label:hover {
     &::before {
       border: 1px solid #bababa;
     }
