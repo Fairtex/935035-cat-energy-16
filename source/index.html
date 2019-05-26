@@ -15,6 +15,8 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header page-header--nojs">
+      <!--Класс page-header--nojs отвечает за состояние мобильного меню при отключеном JS,
+       при подключенном JS класс удаляется, появляется кнопка и меню становится интерактивным-->
       <div class="page-header__wrapper">
         <div class="page-header__top-box">
           <a href="index.html" class="page-header__logo-link">
@@ -154,7 +156,7 @@
             <div class="example__info-stats">
               <ul class="example__info-list">
                 <li class="example__info-item">
-                  <div class="example__info-value">5кг</div>
+                  <div class="example__info-value">5 кг</div>
                   <span class="example__info-mark">снижение веса</span>
                 </li>
                 <li class="example__info-item">
@@ -167,7 +169,7 @@
               </div>
             </div>
           </div>
-          <div class="example__slider">
+          <div class="slider">
             <div class="slider__gradient">
             <div class="slider__slides-block">
               <div class="slider__slide slider__slide--before">
@@ -208,7 +210,7 @@
         <div class="contacts__info-block">
           <div class="contacts__info-layout">
             <div class="contacts__info-title">
-              <h2>Приглашаем к сотрудничеству дилеров!</h2>
+              <h2>Приглашаем <br> к сотрудничеству дилеров!</h2>
             </div>
             <div class="contacts__info-address">
               <div class="contacts__address">ул. Большая Конюшенная, д. 19/8</div>
@@ -217,7 +219,9 @@
           </div>
         </div>
         </div>
-        <div class="contacts__map" id="map"></div>
+        <div class="contacts__map contacts__map--no-js" id="map"></div>
+        <!--Класс contacts__map--no-js отвечает за состояние карты при отключенном JS, карта отображается фоновым изображением,
+        присутсвует маркер. При подключенном JS данный класс удаляется и карта становится интерактивной -->
       </section>
     </main>
     <footer class="page-footer">
